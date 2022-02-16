@@ -9,9 +9,11 @@ input.onButtonPressed(Button.A, function () {
     radio.setGroup(currentGroup);
     basic.showNumber(currentGroup);
 })
+
 radio.onReceivedString(function (receivedString) {
     basic.showString(receivedString);
 })
+
 input.onButtonPressed(Button.B, function () {
     currentGroup += -1;
     radio.setGroup(currentGroup);
